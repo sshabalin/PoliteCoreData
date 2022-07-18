@@ -1,7 +1,7 @@
 ![Shakuro HTTPClient](title_image.png)
 <br><br>
 # PoliteCoreData
-![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
 ![License MIT](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -10,9 +10,7 @@
 - [Usage](#usage)
 - [License](#license)
 
-HTTPClient is a Swift library designed to abstract away access to Alamofire. The main purpose of the HTTPClient component is to encapsulate endpoints description inside some network abstraction layer to avoid calling Alamofire directly. Enums are used to define enpoints. This allows to make compile-time checks for correct API endpoint accesses.
-
-![](HTTPClient.png)
+A Swift Core Data wrapper.
 
 ## Requirements
 
@@ -24,10 +22,10 @@ HTTPClient is a Swift library designed to abstract away access to Alamofire. The
 
 ### CocoaPods
 
-To integrate HTTPClient into your Xcode project with CocoaPods, specify it in your `Podfile`:
+To integrate PoliteCoreData into your Xcode project with CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'Shakuro.HTTPClient'
+pod 'Shakuro.PoliteCoreData'
 ```
 
 Then, run the following command:
@@ -38,20 +36,15 @@ $ pod install
 
 ### Manually
 
-If you prefer not to use CocoaPods, you can integrate Shakuro.HTTPClient simply by copying it to your project.
+If you prefer not to use CocoaPods, you can integrate Shakuro.PoliteCoreData simply by copying it to your project.
 
 ## Usage
 
-1. Create a couple of endpoints by adopting `HTTPClientAPIEndPoint` protocol.
-2. Create responses parsers by adopting `HTTPClientParser` protocol.
-3. Create new instanse of `HTTPClient` class.
-4. Start your HTTP request by calling `.sendRequest`. You should use completions to handle parsed results.
-
-Have a look at the [HTTPClient_Example](https://github.com/shakurocom/HTTPClient/tree/master/HTTPClient_Example)
+Have a look at the [PoliteCoreData_Example](https://github.com/shakurocom/PoliteCoreData/tree/master/PoliteCoreData_Example)
 
 ## License
 
-Shakuro.HTTPClient is released under the MIT license. [See LICENSE](https://github.com/shakurocom/HTTPClient/blob/master/LICENSE.md) for details.
+Shakuro.PoliteCoreData is released under the MIT license. [See LICENSE](https://github.com/shakurocom/PoliteCoreData/blob/master/LICENSE.md) for details.
 
 ## Give it a try and reach us
 
