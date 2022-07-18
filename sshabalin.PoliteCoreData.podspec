@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
 
-    s.name             = 'sshabalin.HTTPClient'
+    s.name             = 'sshabalin.PoliteCoreData'
     s.version          = '1.0.0'
     s.summary          = 'PoliteCoreData client for iOS'
-    s.homepage         = 'https://github.com/shakurocom/PoliteCoreData'
+    s.homepage         = 'https://github.com/sshabalin/PoliteCoreData'
     s.license          = { :type => "MIT", :file => "LICENSE.md" }
     s.authors          = {'sshabalin1984' => 'sshabalin@shakuro.com', 'sshabalin' => 'sshabalin@shakuro.com'}
     s.source           = { :git => 'https://github.com/sshabalin/PoliteCoreData.git', :tag => s.version }
