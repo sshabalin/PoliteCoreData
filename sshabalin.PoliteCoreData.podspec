@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name             = 'sshabalin.PoliteCoreData'
-    s.version          = '1.0.0'
+    s.version          = '1.0.1'
     s.summary          = 'PoliteCoreData client for iOS'
     s.homepage         = 'https://github.com/sshabalin/PoliteCoreData'
     s.license          = { :type => "MIT", :file => "LICENSE.md" }
