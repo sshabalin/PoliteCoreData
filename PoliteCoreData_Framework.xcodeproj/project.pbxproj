@@ -18,6 +18,7 @@
 		262378732885A70300375889 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 262378722885A70300375889 /* README.md */; };
 		262378752885A71E00375889 /* sshabalin.PoliteCoreData.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 262378742885A71E00375889 /* sshabalin.PoliteCoreData.podspec */; };
 		262378792885AA8500375889 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 262378782885AA8500375889 /* LICENSE */; };
+		7999279DE8EE74F8A476D0D1 /* Pods_PoliteCoreData_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44515C875DE97E23A776F924 /* Pods_PoliteCoreData_Framework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		262378722885A70300375889 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		262378742885A71E00375889 /* sshabalin.PoliteCoreData.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = sshabalin.PoliteCoreData.podspec; sourceTree = "<group>"; };
 		262378782885AA8500375889 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		44515C875DE97E23A776F924 /* Pods_PoliteCoreData_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoliteCoreData_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2FE040FFAF3E05C9E41A24 /* Pods-PoliteCoreData_Framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoliteCoreData_Framework.debug.xcconfig"; path = "Target Support Files/Pods-PoliteCoreData_Framework/Pods-PoliteCoreData_Framework.debug.xcconfig"; sourceTree = "<group>"; };
+		ECE329C5BC39819CA42F8C23 /* Pods-PoliteCoreData_Framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoliteCoreData_Framework.release.xcconfig"; path = "Target Support Files/Pods-PoliteCoreData_Framework/Pods-PoliteCoreData_Framework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7999279DE8EE74F8A476D0D1 /* Pods_PoliteCoreData_Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,8 @@
 				2623782728858B9500375889 /* PoliteCoreData_Framework */,
 				2623783028858D6500375889 /* Source */,
 				2623782628858B9500375889 /* Products */,
+				4AD66BCA59E01991FA759696 /* Pods */,
+				D5C4689FEB6CA857116F22D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +97,24 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		4AD66BCA59E01991FA759696 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE2FE040FFAF3E05C9E41A24 /* Pods-PoliteCoreData_Framework.debug.xcconfig */,
+				ECE329C5BC39819CA42F8C23 /* Pods-PoliteCoreData_Framework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5C4689FEB6CA857116F22D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44515C875DE97E23A776F924 /* Pods_PoliteCoreData_Framework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -108,6 +133,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2623782C28858B9500375889 /* Build configuration list for PBXNativeTarget "PoliteCoreData_Framework" */;
 			buildPhases = (
+				84B0A8D4B273B086B869839C /* [CP] Check Pods Manifest.lock */,
 				2623782028858B9500375889 /* Headers */,
 				2623782128858B9500375889 /* Sources */,
 				2623782228858B9500375889 /* Frameworks */,
@@ -166,6 +192,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84B0A8D4B273B086B869839C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoliteCoreData_Framework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2623782128858B9500375889 /* Sources */ = {
@@ -309,6 +360,7 @@
 		};
 		2623782D28858B9500375889 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE2FE040FFAF3E05C9E41A24 /* Pods-PoliteCoreData_Framework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -338,6 +390,7 @@
 		};
 		2623782E28858B9500375889 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE329C5BC39819CA42F8C23 /* Pods-PoliteCoreData_Framework.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
